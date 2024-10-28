@@ -5,9 +5,7 @@ spring:
   application:
     name: Gateway
   cloud:
-    discovery:
-      enabled: true
-
-eureka:
-  instance:
-    hostname: localhost
+    consul:
+      host: localhost
+      port: 8500
+      discovery: SERVICE-GATEWAY
